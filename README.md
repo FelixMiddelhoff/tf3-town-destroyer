@@ -4,6 +4,8 @@
 
 **EN** | [DE](#deutsch)
 
+**Get it in the in-game Mod Hub** (mod.io): [Town Destroyer](https://mod.io/g/transportfever3/m/town-destroyer)
+
 A script mod for Transport Fever 3. **Rename a town to `DESTROY`** and it is deleted after 30 seconds. Rename it back within 30 seconds and nothing happens.
 
 **Please test it in a new game first, and tell me how it works for you** (see [Feedback](#feedback)).
@@ -62,6 +64,8 @@ MIT, see [LICENSE](LICENSE).
 ---
 
 ## Deutsch
+
+**Im Spiel über den Mod-Hub laden** (mod.io): [Town Destroyer](https://mod.io/g/transportfever3/m/town-destroyer)
 
 Ein Script-Mod für Transport Fever 3. **Benenne eine Stadt in `DESTROY` um**, und sie wird nach 30 Sekunden gelöscht. Benennst du sie innerhalb dieser 30 Sekunden zurück, passiert nichts.
 
