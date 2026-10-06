@@ -1,0 +1,19 @@
+{
+    "dependencies": null,
+    "incompatibilities": null,
+    "modId": "felix_town_destroyer_1",
+    "options": null,
+    "params": null,
+    "preRunScript": {
+        "fileName": "felix_town_destroyer_1::/mod.script@preRunFn"
+    },
+    "postRunScript": {
+        "fileName": ""
+    },
+    "revision": 1,
+    "runScript": {
+        "fileName": ""
+    },
+    "severityAdd": "None",
+    "severityRemove": "None"
+}

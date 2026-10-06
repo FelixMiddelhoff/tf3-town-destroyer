@@ -1,0 +1,16 @@
+{
+    "authors": [
+        {
+            "name": "Felix",
+            "role": "CREATOR"
+        }
+    ],
+    "description": "EN: Rename a town to DESTROY (or LÖSCHEN) and it is deleted after 30 seconds. Only the whole name counts: \"Destroy City\" is not deleted. Rename the town back within 30 seconds to cancel. The deletion cannot be undone, so save first. At least two towns always stay. Stations in the town are removed with it, and in our test the game then corrected the line by itself. Depots, roads outside the town and industries stay. Roads that connected the town stay as dead ends.\nPlease test it in a new game first, and send me feedback: github.com/FelixMiddelhoff/tf3-town-destroyer\n\nDE: Eine Stadt in DESTROY (oder LÖSCHEN) umbenennen, und sie wird nach 30 Sekunden gelöscht. Es zählt nur der ganze Name: „Destroy City“ wird nicht gelöscht. Innerhalb von 30 Sekunden zurückbenennen bricht ab. Das Löschen lässt sich nicht rückgängig machen, deshalb vorher speichern. Mindestens zwei Städte bleiben immer. Stationen in der Stadt verschwinden mit ihr, und in unserem Test hat das Spiel die Linie danach selbst korrigiert. Depots, Straßen außerhalb der Stadt und Industrien bleiben. Straßen, die die Stadt verbanden, bleiben als Sackgassen.\nBitte zuerst in einem neuen Spiel testen, und gib mir Feedback: github.com/FelixMiddelhoff/tf3-town-destroyer",
+    "name": "Town Destroyer",
+    "summary": "Rename a town to DESTROY to delete it / Stadt in DESTROY umbenennen, um sie zu löschen",
+    "tags": [
+        "Script Mod",
+        "Town Building"
+    ],
+    "url": "https://github.com/FelixMiddelhoff/tf3-town-destroyer"
+}
