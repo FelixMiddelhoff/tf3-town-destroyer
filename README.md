@@ -29,9 +29,9 @@ A script mod for Transport Fever 3. **Rename a town to `DESTROY`** and it is del
 - The 30 seconds are real seconds, also when the game runs faster (x2, x3, x4). The pause stops the countdown.
 - **At least two towns always stay.** If only two towns are left, a town named `DESTROY` is not deleted.
 - The town, its streets and its buildings are removed (`makeTownDestroyCmd`).
-- **Stations in the town are removed with it.** In our test the game then corrected the line by itself.
+- **Stations in the town can stay or be removed.** The stop of a removed station disappears from its line, and the game corrects the line afterwards.
 - Depots outside the town, roads outside the town and all industries stay.
-- Roads that connected the town to other towns stay behind as dead ends. You can remove them with the bulldozer.
+- Roads that connected the town to other towns stay behind as dead ends. You can remove them with the bulldozer. **Vehicles can get stuck in these dead ends.**
 - The game writes a warning `Town entity does not exist anymore` to its log. That is harmless.
 
 ## Install
@@ -49,7 +49,8 @@ Tested on Transport Fever 3, build 40408:
 - Cancelling by renaming back within the 30 seconds works, at normal speed and at x4. Mixed case and the upper case umlaut (`LÖSCHEN`, `LöScHeN`) are recognized.
 - At game speed x4 the deletion came after exactly 30 real seconds.
 - With two towns left, a town named `destroy` was not deleted.
-- A town with a station of mine and a line: the station was removed with the town, the depot outside the town stayed, and the game corrected the line by itself afterwards.
+- A town with a bus depot, a station and a line with two stops: the depot and the station stayed. The line showed errors at first.
+- A town with a station of mine and a line: the station of the line was removed, the game corrected the line afterwards. Two vehicles got stuck in dead ends.
 
 Not tested: several lines or train stations in the town, vehicles with cargo in the town, and the combination with other mods.
 
@@ -90,9 +91,9 @@ Ein Script-Mod für Transport Fever 3. **Benenne eine Stadt in `DESTROY` um**, u
 - Die 30 Sekunden sind echte Sekunden, auch wenn das Spiel schneller läuft (x2, x3, x4). Die Pause hält den Countdown an.
 - **Mindestens zwei Städte bleiben immer.** Sind nur noch zwei Städte übrig, wird eine Stadt mit dem Namen `DESTROY` nicht gelöscht.
 - Die Stadt, ihre Straßen und ihre Gebäude werden entfernt (`makeTownDestroyCmd`).
-- **Stationen in der Stadt verschwinden mit ihr.** In unserem Test hat das Spiel die Linie danach selbst korrigiert.
+- **Stationen in der Stadt können bleiben oder verschwinden.** Die Haltestelle einer entfernten Station verschwindet aus ihrer Linie, und das Spiel korrigiert die Linie danach.
 - Depots außerhalb der Stadt, Straßen außerhalb der Stadt und alle Industrien bleiben.
-- Straßen, die die Stadt mit anderen Städten verbanden, bleiben als Sackgassen zurück. Mit dem Abrisswerkzeug lassen sie sich entfernen.
+- Straßen, die die Stadt mit anderen Städten verbanden, bleiben als Sackgassen zurück. Mit dem Abrisswerkzeug lassen sie sich entfernen. **Fahrzeuge können in diesen Sackgassen stecken bleiben.**
 - Das Spiel schreibt eine Warnung `Town entity does not exist anymore` ins Log. Das ist harmlos.
 
 ### Installation
@@ -106,7 +107,8 @@ Getestet mit Transport Fever 3, Build 40408:
 - Abbrechen durch Zurückbenennen innerhalb der 30 Sekunden funktioniert, bei normalem Tempo und bei x4. Gemischte Schreibweise und der große Umlaut (`LÖSCHEN`, `LöScHeN`) werden erkannt.
 - Bei Spielgeschwindigkeit x4 kam das Löschen nach genau 30 echten Sekunden.
 - Bei zwei verbleibenden Städten wurde eine Stadt mit dem Namen `destroy` nicht gelöscht.
-- Eine Stadt mit einer Station von mir und einer Linie: Die Station verschwand mit der Stadt, das Depot außerhalb blieb, und das Spiel korrigierte die Linie danach selbst.
+- Eine Stadt mit Busdepot, Station und einer Linie mit zwei Haltestellen: Depot und Station blieben stehen, die Linie zeigte zunächst Fehler.
+- Eine Stadt mit einer Station von mir und einer Linie: Die Haltestelle der Station verschwand aus der Linie, und das Spiel korrigierte die Linie danach. Zwei Fahrzeuge blieben in Sackgassen stecken.
 
 Nicht getestet: mehrere Linien oder Zugstationen in der Stadt, Fahrzeuge mit Ladung in der Stadt und die Kombination mit anderen Mods.
 
